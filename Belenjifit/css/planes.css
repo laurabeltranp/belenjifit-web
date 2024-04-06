@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+body {
+    background-color: #e0f2f1; /* Establece el color de fondo de la página */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+}
+.logo {
+    max-width: 100px; 
+}
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #e0f2f1, #ffffff); 
+}
+.navbar-collapse {
+    justify-content: center;
+}
+.navbar-nav .nav-item {
+    margin-right: 15px; 
+}
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Cambia la opacidad de la barra de navegación */
+}
+/* Seccion 1*/
+.seccion1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.seccion1-content h2,
+.seccion1-content p,
+.seccion1-content .btn {
+    color: #fff;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.seccion1-content p {
+    font-size: 1.5rem;
+}
+
+.seccion1-content .btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+}
+
+.seccion1-content .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/img/entrenador_personal.jpg');
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+/* Planes*/
+.benefit-box {
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit {
+    margin-right: 10px;
+}
+
+.tick {
+    background-color: #B8D1A6;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.seccion3 {
+    margin-top: 50px; 
+}
+.card {
+    background: linear-gradient(to top, rgba(224, 242, 241, 0.2), rgba(224, 242, 241, 0.9));
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+.card {
+    background: linear-gradient(to top, rgba(224, 242, 241, 0.2), rgba(224, 242, 241, 0.9));
+}
+.card-text {
+    margin-top: 20px;
+}
+
+.divider {
+    margin: 50px auto; 
+    text-align: center; 
+    position: relative; 
+}
+
+.divider-shape {
+    width: 100px; 
+    height: 2px; 
+    background-color: #000; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 0; 
+}
+.preguntas-frecuentes {
+    padding: 50px 0;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+.accordion-button {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-body {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

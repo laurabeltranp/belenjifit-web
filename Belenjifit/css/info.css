@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+body {
+    background-color: #e0f2f1; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.logo {
+    max-width: 100px; 
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #e0f2f1, #ffffff); 
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; 
+}
+
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Cambia la opacidad de la barra de navegación */
+}
+/*/ SECCCION 1*/
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-me-content {
+    width: 50%;
+    position: relative;
+}
+
+.about-me-content img {
+    width: 100%;
+    display: block;
+}
+
+.background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-me-content h2 {
+    position: absolute;
+    top: 50%;
+    right: -500px;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.text {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.text p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+/*carousel*/
+
+h2.testimonio {
+    margin-top: 50px; 
+}
+.testimoniio{
+    margin-top: 30px;
+}
+.testimonio-img {
+    max-width: 500px; 
+    height: auto; 
+}
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+}
+.testimonio {
+    text-align: center;
+}
+/* Footer */
+.footer-logo {
+    max-width: 100px; 
+    margin-bottom: 10px; 
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-content h2 {
+        right: -150px; /* Ajusta este valor según tu diseño para el tamaño móvil */
+    }
+}

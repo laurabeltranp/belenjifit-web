@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { // Cambia 50 según la cantidad de scroll que deseas
+                navbar.classList.add('transparent');
+            } else {
+                navbar.classList.remove('transparent');
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo_belen.png" class="logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">SOBRE MI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planes.html">PLANES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="inicioSesion.html" style="background-color: #009688; color: white;"><i class="fas fa-user me-1"></i>Acceso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 formulario-contacto">
+        <div class="row align-items-center"> <!-- Alinea verticalmente los elementos de la fila -->
+            <div class="col-md-6">
+                <h2 class="text-center mb-4">Formulario de Contacto</h2>
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28950.05530487575!2d-6.970653499999999!3d38.87944924999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1a9f3b8d3dbb59%3A0x285fae72e2b92c6e!2sBadajoz!5e0!3m2!1sen!2ses!4v1647861451186!5m2!1sen!2ses" width="100%" height="300" style="border:0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo y texto -->
+                <div class="col-md-3">
+                    <img src="/img/logo_belen.png" class="logo" alt="Logo">
+                    <p class="text-light">Tus resultados son importantes</p>
+                </div>
+                <!-- Navegación -->
+                <div class="col-md-3">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-light text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Sobre Mí</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Planes</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Acceso</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i>Correo: info@belenjifit.es</p>
+                    <p><i class="fas fa-phone-alt me-2"></i>Teléfono: +34 671989676</p>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="col-md-3">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-3"><a href="https://www.instagram.com/belenjifit/" target="_blank" class="text-decoration-none"><i class="fab fa-instagram text-light"></i></a></li>
+                        <li><a href="#"  target="_blank" class="text-decoration-none"><i class="fab fa-tiktok text-light"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2024 belenjifit</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Enlaces a los archivos JavaScript de Bootstrap (jQuery y Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html

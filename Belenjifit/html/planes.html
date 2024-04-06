@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/planes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <style>
+        h2 {
+            font-family: 'Kanit', sans-serif;
+            font-style: italic;
+            font-weight: 700;
+        }
+    </style>
+
+    <!-- Enlace con Bootstrap a través de un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { 
+                navbar.classList.add('transparent');
+            } else {
+                navbar.classList.remove('transparent');
+            }
+        });
+    </script>
+</head>
+<body>
+
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo_belen.png" class="logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">SOBRE MI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planes.html">PLANES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn" href="inicioSesion.html" style="background-color: #009688; color: white;"><i class="fas fa-user me-1"></i>Acceso</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Primera Sección -->
+        <section class="container-fluid seccion1" style="margin-bottom: 50px; height: 100vh;">
+            <div class="row align-items-center justify-content-center h-100">
+                <div class="col-md-6 d-flex flex-column align-items-center text-center seccion1-content"> <!-- Añadimos la clase seccion1-content -->
+                    <h2 style="font-size: 4vw;">NUESTROS PLANES</h2>
+                    <p style="font-size: 2vw;">
+                        Adaptado para seguir en casa o en el gimnasio.
+                    </p>    
+                    <p style="font-size: 2vw;">
+                        ¡Descubre nuestros planes diseñados para ayudarte a alcanzar tus objetivos de entrenamiento personal!
+                    </p>             
+                    <div class="btn-container">
+                        <a href="inicioSesion.html" class="btn btn-danger btn-lg rounded-pill">Comienza ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Seccion 2-->
+        <section class="container-fluid seccion2">
+            <div class="row justify-content-center align-items-center" style="height: auto;">
+                <div class="col-md-6 text-center" id="plan-basico">
+                    <h2 class="text-black mb-5" style="font-family: 'Kanit', sans-serif; font-weight: 700; font-style: italic; font-size: 2.5rem;">Belenji Fit Básico</h2>
+                    <p class="texto-intro mb-4">
+                        ¿Qué contiene el plan?
+                    </p>
+                    <div class="row justify-content-center align-items-center mb-4">
+                        <div class="col-md-6">
+                            <div class="benefit-box">
+                                <div class="benefit">100% individualizado</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box">
+                                <div class="benefit">Contacto por email</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box">
+                                <div class="benefit">Revisión mensual</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="benefit-box">
+                                <div class="benefit">Excel personalizado</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box">
+                                <div class="benefit">Diario de hábitos</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box">
+                                <div class="benefit">Ejercicios en video</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center align-items-center text-center" style="margin-top: 50px;">
+                <div class="col-md-4">
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mensual</h5>
+                            <p class="card-text">65 euros</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Trimestral</h5>
+                            <p class="card-text">50 euros</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Anual</h5>
+                            <p class="card-text">35 euros</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid divider">
+            <div class="divider-shape"></div>
+        </div>
+    <!-- Seccion 3-->
+        <section class="container-fluid seccion3" style="background: linear-gradient(to bottom, #e0f2f1, #ffffff); padding-top: 50px;">
+            <div class="row justify-content-center align-items-center" style="height: auto;">
+                <div class="col-md-6 text-center" id="plan-pro">
+                    <h2 class="text-black mb-5" style="font-family: 'Kanit', sans-serif; font-weight: 700; font-style: italic; font-size: 2.5rem;">Belenji Fit Pro</h2>
+                    <p class="texto-intro mb-4">
+                        ¿Qué contiene el plan?
+                    </p>
+                    <div class="row justify-content-center align-items-center mb-4 ">
+                        <div class="col-md-6 d-flex flex-column justify-content-between">
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Sesiones personalizadas</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Asesoramiento nutricional</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Seguimiento continuo</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Entrenamiento avanzado</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-between">
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Planificación deportiva</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Soporte 24/7</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Corrección sobre técnica de los ejercicios</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Tabla de zonas de FC (para entrenamientos de cardio)</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                            <div class="benefit-box bg-white">
+                                <div class="benefit">Contacto por whatsapp</div>
+                                <div class="tick">&#10003;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center text-center" style="margin-top: 50px;">
+                <div class="col-md-4">
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Mensual</h5>
+                            <p class="card-text">80 euros</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Trimestral</h5>
+                            <p class="card-text">70 euros</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-light mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Anual</h5>
+                            <p class="card-text">55 euros</p>
+                            <a href="#" class="btn btn-primary rounded-pill">Contratar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid divider">
+            <div class="divider-shape"></div>
+        </div>
+    <!-- Seccion 4-->
+        <section class="container-fluid preguntas-frecuentes" style="padding-top: 50px;">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+                    <div class="accordion" id="accordionFAQ">
+                        <!-- Pregunta 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    ¿El plan es 100% adaptado a mí?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Sí, gracias al cuestionario de evaluación inicial conocemos tus objetivos, preferencias y situación personal, información que nos sirve de base para diseñar tu plan. Además, tendrás un acompañamiento continuo para que el plan esté perfectamente adecuado a ti en cada momento.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pregunta 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Es una suscripción?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    No, cada vez que quieras renovar con nosotros deberás hacer el pago, no te vamos a cobrar por adelantado ni es necesario darse de baja con antelación.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pregunta 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Como puedo hacerlo online?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    La entrenadora te dará una serie de directrices y ejercicios semanales que deberás ir haciendo según sus indicaciones, si tienes algún tipo de lesión es importante comentarlo.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pregunta 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    ¿Como se realizan las revisiones?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    La entrenadora fijará una fecha para que os contactéis vía WhatsApp o Google Meet para realizar dicha revisión, siempre tendrás contacto directo con ella y podrás comentarle cualquier duda.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pregunta 5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    ¿Donde puedo realizar el ejercicio?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Podrás realizarlo en casa, en el gimnasio o en la calle, para que los ejercicios estén 100% adaptados a tu entorno deberás comentárs
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     <!-- Footer -->
+     <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo y texto -->
+                <div class="col-md-3">
+                    <img src="/img/logo_belen.png" class="logo" alt="Logo">
+                    <p class="text-light">Tus resultados son importantes</p>
+                </div>
+                <!-- Navegación -->
+                <div class="col-md-3">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-light text-decoration-none" href="#">Inicio</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Sobre Mí</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Planes</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Acceso</a></li>
+                        <li><a class="text-light text-decoration-none" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Contacto -->
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i>Correo: info@belenjifit.es</p>
+                    <p><i class="fas fa-phone-alt me-2"></i>Teléfono: +34 671989676</p>
+                </div>
+                <!-- Redes Sociales -->
+                <div class="col-md-3">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-3"><a href="https://www.instagram.com/belenjifit/" target="_blank" class="text-decoration-none"><i class="fab fa-instagram text-light"></i></a></li>
+                        <li><a href="#"  target="_blank" class="text-decoration-none"><i class="fab fa-tiktok text-light"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="text-light">
+            <div class="row">
+                <div class="col">
+                    <p>&copy; 2024 belenjifit</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlaces a los archivos JavaScript de Bootstrap (jQuery y Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/planes.js"></script>
+</body>
+</html

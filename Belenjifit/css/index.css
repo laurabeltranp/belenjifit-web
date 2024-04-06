@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+body {
+    background-color: #e0f2f1; 
+    margin: 0; 
+    padding: 0; 
+}
+.logo {
+    max-width: 100px; 
+}
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #e0f2f1, #ffffff); 
+}
+.navbar-collapse {
+    justify-content: center;
+}
+.navbar-nav .nav-item {
+    margin-right: 15px; 
+}
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Cambia la opacidad de la barra de navegación */
+}
+/*Estilos seccion1*/
+.seccion1 {
+    position: relative;
+    overflow: hidden; 
+}
+
+.seccion1-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item-bg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: blur(10px);
+}
+
+.seccion1-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.seccion1-content h2, .seccion1-content p, .seccion1-content .btn {
+    color: #fff;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+.seccion1-content p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5rem; 
+}
+.seccion1-content .btn {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+}
+.seccion1-content .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.seccion1 h2, .seccion1 p {
+    color: #fff; 
+}
+
+
+.seccion1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); /* Color y opacidad del difuminado */
+}
+
+.seccion1 .row {
+    position: relative;
+    z-index: 1;
+}
+
+.seccion1 h2 {
+    color: #fff; 
+}
+
+.text-black {
+    color: #000; 
+}
+
+
+h2 {
+
+    font-family: 'Kanit', sans-serif; 
+    font-style: italic; 
+    
+}
+h2, .texto-intro {
+    text-align: center;
+    color: #000000;
+    font-family: "Poppins", Sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    font-style: oblique;
+    line-height: 50px;
+}
+.texto-intro {
+    font-size: 1.2rem;
+    text-align: center;
+}
+/* Barra entre seccion1 y 2*/
+.barra-emojis {
+    background-color: #DFE8F0; 
+    height: 125px; 
+
+}
+
+.emoji {
+    font-size: 40px; 
+    margin: 0 20px; 
+    
+}
+
+.barra-emojis p {
+    font-size: 14px; 
+}
+/* Seccion 2*/
+.profile-picture {
+    display: inline-block;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.profile-picture img.rounded-circle {
+    border-radius: 50%; 
+}
+/* Seccion 3 */
+.seccion2 {
+    background-image: linear-gradient(to top, rgba(224, 242, 241, 0.2), rgba(224, 242, 241, 0.9));
+}
+h2.testimonio {
+    margin-top: 50px; 
+}
+.testimoniio{
+    margin-top: 30px;
+}
+.testimonio-img {
+    max-width: 500px; 
+    height: auto; 
+}
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Estilos para la política de privacidad */
+#politicaPrivacidad {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    text-align: center;
+}
+
+#politicaPrivacidad p {
+    margin-bottom: 20px;
+}
+
+#politicaPrivacidad button {
+    padding: 10px 20px;
+    border-radius: 50px; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+#politicaPrivacidad button:hover {
+    background-color: black; 
+    color: white; 
+}
+
+#politicaPrivacidad button:first-child {
+    background-color: white;
+    color: black;
+    margin-right: 10px; 
+}
+
+#politicaPrivacidad button:first-child:hover {
+    background-color: black; 
+    color: white; 
+}
+/* Footer */
+.footer-logo {
+    max-width: 100px; 
+    margin-bottom: 10px; 
+}
